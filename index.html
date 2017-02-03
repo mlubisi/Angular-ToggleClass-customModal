@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Angular: ToggleClass customModal</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div style="background:green;position:relative;" ng-app="classApp" ng-controller="classCtrl" 
+     ng-class="{'active': isActive}">
+  <button class="button" ng-click="activeButton()">Approve</button> 
+  <div class="options_">
+    <div class="optionsContent">
+    <p>Confirm Transaction...<br/>Are you Sure?</p>
+    <br>
+    <button class="confirm_">Confirm</button>
+    <button class="cancel_" ng-click="activeButton()">Cancel</button>
+    </div>
+  </div>
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
